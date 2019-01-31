@@ -7,12 +7,10 @@ def key_for_min_value(name_hash)
   comparison_value = 100
   
   name_hash.collect do |name, number|
-    
     if comparison_value > number 
       comparison_value = number
       comparison_key = name
     end
-    
   end 
   
   comparison_key
